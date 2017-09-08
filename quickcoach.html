@@ -1,0 +1,823 @@
+<!-- // extracting files to templatable pieces.. this is just the main body
+-->
+
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+
+
+<!-- HEAD
+	============================================= -->
+	<head>
+		<!-- meta data -->
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="author" content="" />
+		<meta name="description" content="" />
+
+		<!-- Twitter Card data -->
+		<meta name="twitter:card" value="summary">
+
+		<!-- Open Graph data -->
+		<meta property="og:title" content=" " />
+		<meta property="og:type" content="article" />
+		<meta property="og:url" content="" />
+		<meta property="og:image" content="" />
+		<meta property="og:description" content="" />
+
+
+
+<!-- Stylesheets
+	============================================= -->
+
+
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" >
+
+<!-- Scripts ( move to end of doc )
+	============================================= -->
+
+
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+	<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+	<!-- moustache tempalating engine -->
+	<script type="text/javascript" language="Javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.3.0/mustache.min.js"></script>
+
+
+
+
+
+<!-- google sign in ( turned off for the moment, would need to restructure the data to get this set up -->
+<!-- 
+<script src="https://apis.google.com/js/platform.js" async defer></script>
+<meta name="google-signin-client_id" content="5JmU3QgQSWXJyf0dUo10ntal.apps.googleusercontent.com">
+ -->
+<!-- sign in button -->
+<!-- <script type="text/javascript" language="Javascript" src="">
+	function onSignIn(googleUser) {
+	  var profile = googleUser.getBasicProfile();
+	  console.log('ID: ' + profile.getId()); // Do not send to your backend! Use an ID token instead.
+	  console.log('Name: ' + profile.getName());
+	  console.log('Image URL: ' + profile.getImageUrl());
+	  console.log('Email: ' + profile.getEmail());
+	}
+</script>
+ -->
+
+<!-- sign out button -->
+<!-- <script>
+  function signOut() {
+    var auth2 = gapi.auth2.getAuthInstance();
+    auth2.signOut().then(function () {
+      console.log('User signed out.');
+    });
+  }
+</script>
+
+</script> --> 
+
+<!--[if lt IE 9]>
+<script ></script>
+<![endif]-->
+
+
+
+<!-- Document Title
+	============================================= -->
+
+</head>
+
+
+
+<!-- *** *** TEMPLATE CONFIGURATION PARAMETERS
+============================================= 	
+============================================= -->
+
+<!-- *** Input Title here
+	============================================= -->
+	<title></title>
+
+
+	<body class="stretched">
+
+
+
+
+<!-- Document Wrapper
+	============================================= -->
+	<div id="wrapper" class="clearfix">
+
+
+
+<!-- Content
+	============================================= -->
+
+
+
+<!-- Content
+	============================================= -->
+	<section id="content">
+
+		<div class="content-wrap">
+
+			<div class="container clearfix">
+
+<!-- Post Content
+	============================================= -->
+			<div class=" nobottommargin">
+
+
+<!-- phone layout brainstorm menu -->
+<!-- 
+<ul class="nav nav-tabs">
+  <li role="presentation" class="tools_col_toggle"><a href="#">TOOLS</a></li>
+  <li role="presentation" class="act_col_toggle" ><a href="#act_col">ACTION</a></li>
+  <li role="presentation" class="journal_col_toggle" ><a href="#journal_col">JOURNAL</a></li>
+</ul> -->
+<!-- Contact Form
+	============================================= -->
+
+
+<br>
+	<div class="container mainContainer">
+
+
+		<div class="doc_header">
+			<div class="sub-menu">
+				<div class="" id="">
+					<h4 class="sub-menu-trigger list-group-item-heading">Learning Amplified</h4>
+
+		
+<!-- 					<span class="list-group-item-text text-muted">Bring Experiential Inquiry, Self Assessment and Feedback loop circuits together to amplify your learning</span>
+ -->			<p class = "scrollable_menu">			
+
+			<a id="toggle_FEED"  class = "scrollable_menu_item menu_button   ">FEED</a>
+			<a id="toggle_CONTEXT"  class = "scrollable_menu_item menu_button   ">CONTEXT</a>
+			<a id="toggle_TOOLS"  class = "scrollable_menu_item menu_button   ">TOOLS</a>
+			<a id="toggle_ACTION"  class = "scrollable_menu_item menu_button ">ACTION</a>
+			<a id="toggle_JOURNAL"  class = "scrollable_menu_item menu_button  ">JOURNAL</a>
+			
+<!-- google sign in and out buttons. on hold.  -->
+			<!-- <div class="g-signin2" data-onsuccess="onSignIn"></div>
+			<a href="#" onclick="signOut();">Sign out</a> -->
+
+			</p>
+
+				</div>
+			</div>
+		</div>
+
+
+<div class="" id="sampleArea">
+
+</div>
+
+
+<style type="text/css">
+
+.doc_header{
+	padding-bottom: 3px;
+	line-height: 1;
+}
+.scrollable {
+    width: auto;
+    overflow-x: auto;
+    overflow-y: hidden;
+
+} 
+
+.scrollable_menu{
+	 width: auto;
+    display: block;
+    white-space: nowrap;
+    font-size: 0;
+     overflow: auto; 
+     margin-bottom:  0px;
+     padding-bottom: 3px;
+
+} 
+
+.scrollable_menu_item{
+
+    display: inline-block;
+    font-size: 12px;
+    padding: 4px;
+}
+
+
+.col {
+    resize: both;
+    overflow: scroll;
+}
+
+
+
+</style>
+
+
+
+<div class="row row1 row-fluid scrollable">
+
+
+
+	<div id="feed_col" style="display:none;"  class="col-sm-12 col-xs-12 col">
+		<div class="list-group" id="" >
+			<br>
+
+			<div class="list-group-item area_header" >
+
+				<h3 class="list-group-item-heading " ><span id="feed_menu_title" >Feed</span><a  id='add_new'><span class='pull-right'> + </span></a></h3>
+				<p class = "scrollable_menu">			
+
+				</p>
+			</div>
+			<div class="scrollable_wrapper">
+				<div class="" id="feed_area">
+				</div>
+				<div class="" id="">
+				</div>
+
+
+				<!-- clarify what you want from this practice -->
+
+				<!-- clarify what you are going to do about it -->
+
+			</div>
+		</div>
+
+	</div>
+<script type="text/javascript" language="Javascript" src="">
+
+// distinguish between context modes, for setup or active use
+
+// $("#define_filters").on('click',function(){
+// 	var context_filter_mode = "define_filters_mode";
+// });
+// $("#use_filters").on('click',function(){
+// 	var context_filter_mode = "use_filters_mode";
+// });
+
+
+
+
+</script>
+
+
+	<div id="context_col" "  class="col-sm-12 col-xs-12 col">
+		<div class="list-group" id="" >
+			<br>
+
+			<div class="list-group-item area_header" >
+				
+				<h3 class="list-group-item-heading " ><span id="context_menu_title" >Context</span><a  id='add_new'><span class='pull-right'> + </span></a></h3>
+<!-- 				<p class = "text-muted"><a id="define_filters">Set up</a> or <a id="use_filters">use these</a> to filter your tools.			
+ -->				<p class = "text-muted">Filter your tools		
+					
+				</p>
+			</div>
+			<div class="scrollable_wrapper">
+				<div class="" id="context_area">
+				</div>
+				<div class="" id="">
+				</div>
+
+
+				<!-- clarify what you want from this practice -->
+
+				<!-- clarify what you are going to do about it -->
+
+			</div>
+		</div>
+
+	</div>
+
+
+
+<!--  -->
+
+
+
+
+<div id="tools_col"  class="col-sm-12 col-xs-12 col">
+	<div class="list-group" id="" >
+			<br>
+
+		
+<!-- <ul class="nav nav-tabs nav-justified">
+  Goals
+</ul>
+<ul class="nav nav-pills nav-justified">
+  Tools
+</ul> -->
+
+	<div class="list-group-item area_header" >
+	
+			<h3 class="list-group-item-heading " ><span id="tool_menu_title" >Tools</span><a  id='add_new'><span class='pull-right'> + </span></a></h3>
+			<p class = "scrollable_menu">			
+
+			<a id="goals_button"  class = "scrollable_menu_item menu_button trigger_goals_view  ">GOALS</a>
+			<a id="inquiry_button"  class = "scrollable_menu_item menu_button trigger_inquiries_view">INQUIRIES</a>
+			<a id="tools_button"  class = "scrollable_menu_item menu_button trigger_tools_view ">TOOLS</a>
+			<a id="habits_button"  class = "scrollable_menu_item menu_button trigger_habits_view ">HABITS</a>
+			</p>
+	</div>
+<div class="scrollable_wrapper">
+		<div class="" id="tools_area">
+		</div>
+		<div class="" id="goals_area">
+		</div>
+
+
+<style type="text/css">
+
+.menu_button{
+	padding: 4px;
+}
+
+.area_header{
+	padding-bottom: 4px;
+}
+</style>
+
+<!-- clarify what you want from this practice -->
+<!-- 
+<a  class="list-group-item tool" id=
+			"dedication">
+				<h4 class="list-group-item-heading sub-menu-trigger" id="" >Dedicate this Practice</h4>
+				<p class="list-group-item-text text-muted">Clarify what you want from this practice</p>
+			</a>
+
+
+clarify what you want to change about your life
+
+<a  class="list-group-item tool" id=
+			"change_something">
+				<h4 class="list-group-item-heading sub-menu-trigger" id="" >Change Anything Of Your Life</h4>
+				<p class="list-group-item-text text-muted">Clarify anything you want to change about your life and how you will do it</p>
+			</a>
+ -->
+
+<!-- clarify what you are going to do about it -->
+
+<!-- 
+			<a class="list-group-item tool" id="Clarify">
+				<h4 class="list-group-item-heading  sub-menu-trigger" id="" >Clarify Your Experience</h4>
+				<p class="list-group-item-text text-muted">Clarify what is going on</p>
+
+			</a>
+		<a class="list-group-item tool" id="Coherence">
+				<h4 class="list-group-item-heading  sub-menu-trigger" id="" >Coherence</h4>
+				<p class="list-group-item-text text-muted">Cohere your state of being</p>
+			</a>
+		
+	<a class="list-group-item tool" id=
+			"money">
+				<h4 class="list-group-item-heading  sub-menu-trigger" id="" >Money Master</h4>
+				<p class="list-group-item-text text-muted">Master your finances</p>
+			</a>
+
+
+<a class="list-group-item tool" id="day_plan">
+				<h4 class="list-group-item-heading sub-menu-trigger" id="" >Plan your Day</h4>
+				<p class="list-group-item-text text-muted">Use this tool to plan out your day</p>
+			</a>
+
+
+<a class="list-group-item tool" id="integrity_check">
+				<h4 class="list-group-item-heading sub-menu-trigger" id="" >Integrity Check</h4>
+				<p class="list-group-item-text text-muted">Become Aware of your Integrity here</p>
+			</a>
+ -->
+		</div>
+</div>
+
+</div>
+
+
+<div id="act_col" class="col-sm-12 col-xs-12  col ">
+			<br>
+
+<div class="list-group-item">
+				<h3 class="list-group-item-heading sub-menu-trigger" id="" >Action</h3>
+
+				<p class="list-group-item-text text-muted">Take action to create change</p>
+
+
+
+			</div>
+<div class="list-group scrollable_wrapper" id="action_area">
+			
+
+			<!-- Action Item -->
+			<div class="list-group-item action goals_action form-group" style="display:none;"" id="">
+
+				<h4 class="list-group-item-heading title" id="" ></h4>
+				<p style="display:none;" id="action_id">test</p>
+				<p class="list-group-item-text text-muted body" id="" ></p>
+				<p class="list-group-item-text text-muted goal_intent" id="" ></p>
+				<a id = "action_link"></a>
+				<br>
+				<h4 class="list-group-item-heading text-muted" id="" >How is this going?</h4><h4 class="list-group-item-heading text-muted ">If you are ready to <a class="goal_check_in_trigger">check in</a> on this please do.  Have you made <a class="goal_progress_trigger">progress</a>?  Any <a class="goal_challenge_trigger">challenges</a> in your way? Any <a class="goal_reconsideration_trigger">reconsiderations</a> to make?  Ready for a new <a class="goal_inquiry_trigger">Inquiry</a> for yourself?  Want to give yourself some <a class="goal_advice_trigger">advice</a>?</h4><hr>
+				<textarea style="display:none;" rows="4" class="list-group-item-text  form-control check_in_area goal_checkin_area" placeholder="How is this going?"></textarea>
+				<textarea style="display:none;" rows="4" class="list-group-item-text  form-control goal_progress_checkin_area" placeholder="Progress?"></textarea>
+				<textarea style="display:none;" rows="4" class="list-group-item-text  form-control goal_challenge_checkin_area" placeholder="Challenges?"></textarea>
+				<textarea style="display:none;" rows="4" class="list-group-item-text  form-control goal_reconsideration_checkin_area" placeholder="Reconsiderations?"></textarea>
+				<textarea style="display:none;" rows="4" class="list-group-item-text  form-control goal_inquiry_checkin_area" placeholder="Inquiries?"></textarea>
+				<textarea style="display:none;" rows="4" class="list-group-item-text  form-control goal_advice_checkin_area" placeholder="What advice would you like to give yourself on this? Ex: I want you to ___ or do this __ or I want you to have ___ kind of experience, so do this ___.."></textarea>
+
+				<button class = "btn btn-success check_in">Add This </button>
+			</div>
+			<!-- end action item -->
+
+
+			<!-- Action Item -->
+			<div class="list-group-item action testing Clarify form-group" style="display:none;"" id="Clarify">
+
+
+				<h4 class="list-group-item-heading  sub-menu-trigger" id="" >Clarify Your Experience</h4><hr>
+				<textarea rows="4" class="list-group-item-text text-muted form-control" placeholder="What are you feeling?"></textarea>
+				<textarea rows="4" class="list-group-item-text text-muted form-control" placeholder="What are you sensing?"></textarea>
+				<textarea rows="4" class="list-group-item-text text-muted form-control" placeholder="What are you longing for?"></textarea>
+				<textarea rows="4" class="list-group-item-text text-muted form-control" placeholder="What are you imagining?"></textarea>
+				<button class = "btn btn-success add">Add This </button>
+			</div>
+			<!-- end action item -->
+
+
+			<!-- Action Item -->
+			<div class="list-group-item action testing Coherence form-group" style="display:none;"" id="Coherence">
+
+
+				<h4 class="list-group-item-heading  sub-menu-trigger" id="" >Create Coherence</h4>
+				<p class="list-group-item-heading ">What would bring you into deeper coherence?</p>
+				<textarea rows="4" class="list-group-item-text form-control" placeholder="What would bring you into deeper coherence?">Deepening: </textarea>
+				<p class="list-group-item-heading ">What do you need to awaken your soul?</p>
+				<textarea rows="4" class="list-group-item-text form-control" placeholder="What do you need to awaken your soul?">To awaken my soul I might: </textarea>
+				<p class="list-group-item-heading ">Where are you out of coherence?</p>
+				<textarea rows="4" class="list-group-item-text form-control" placeholder="Where are you out of coherence?">I am out of coherence in: </textarea>
+				<p class="list-group-item-heading ">What actions could you take to change this?</p>
+				<textarea rows="4" class="list-group-item-text form-control" placeholder="What actions could you take to change this?">Possible Actions: </textarea>
+				<button class = "btn btn-success add">Add This </button>
+			</div>
+			<!-- end action item -->
+
+	<!-- Action Item -->
+			<div class="list-group-item action testing day_plan form-group" style="display:none;"" id="DayPlanner">
+				<h4 class="list-group-item-heading  sub-menu-trigger" id="" >Day Planner</h4>
+				<p class="list-group-item-heading ">What is the most important thing to change?</p>
+				<textarea rows="4" class="list-group-item-text form-control" placeholder="">The most important thing for me to change today is </textarea>
+				<p class="list-group-item-heading ">What are your main projects?</p>
+				<textarea rows="4" class="list-group-item-text form-control" placeholder="">My main projects are </textarea>
+				<p class="list-group-item-heading ">Where are your finances?</p>
+				<textarea rows="4" class="list-group-item-text form-control" placeholder="">My finances are at </textarea>
+				<p class="list-group-item-heading ">Are you able to focus on the most important things?</p>
+				<textarea rows="4" class="list-group-item-text form-control" placeholder="">My ability to focus is </textarea>
+				<button class = "btn btn-success add">Add This </button>
+			</div>
+	<!-- end action item -->
+
+
+	<!-- Action Item -->
+			<div class="list-group-item action testing integrity_check form-group" style="display:none;"" id="integrity_check">
+				<h4 class="list-group-item-heading  sub-menu-trigger" id="" >Integrity Checker</h4><hr>
+				<p class="list-group-item-heading ">Where are you out of integrity?</p>
+				<textarea rows="4" class="list-group-item-text form-control" placeholder="Where are you out of integrity?">I am out of integrity in </textarea><hr>
+				<p class="list-group-item-heading ">What is the impact of this?</p>
+				<textarea rows="4" class="list-group-item-text form-control" placeholder="What is the impact of this?">The impact is</textarea><hr>
+				<p class="list-group-item-heading ">Where are you in integrity?</p>
+				<textarea rows="4" class="list-group-item-text form-control" placeholder="Where are you in integrity?">I am in integrity in</textarea><hr>
+				<p class="list-group-item-heading ">What is the impact of this?</p>
+				<textarea rows="4" class="list-group-item-text form-control" placeholder="What is the impact">The impact of this is </textarea>
+				<button class = "btn btn-success add">Add This </button>
+			</div>
+	<!-- end action item -->
+
+	<!-- Action Item -->
+			<div class="list-group-item action testing dedication form-group" style="display:none;"" id="Dedicate This Practice">
+				<h4 class="list-group-item-heading  sub-menu-trigger" id="" >Dedicate This Practice</h4><hr>
+				<p class="list-group-item-heading ">Clarify what you want from this practice</p>
+				<textarea rows="4" class="list-group-item-text form-control" placeholder="Clarify what you want from this practice?">I am here practicing because I want  </textarea>
+				<p class="list-group-item-heading ">What has helped in the past?</p>
+				<textarea rows="4" class="list-group-item-text form-control" placeholder="">In the past, what helped in this context was </textarea>
+				<p class="list-group-item-heading ">What will you try now?</p>
+				<textarea rows="4" class="list-group-item-text form-control" placeholder="">I will </textarea>
+				
+				<button class = "btn btn-success add">Add This </button>
+			</div>
+	<!-- end action item -->
+
+
+	<!-- Action Item -->
+			<div class="list-group-item action testing change_something form-group" style="display:none;"" id="change_something">
+				<h4 class="list-group-item-heading  sub-menu-trigger" id="" >Change Anything about your Life</h4>
+				<p class="list-group-item-heading text-muted ">Use this tool to change anything about your life</p>
+<hr>
+				<p class="list-group-item-heading ">What suck about your life?  Or What are you resisting?  Or what would you like to change?</p>
+				<textarea rows="4" class="list-group-item-text form-control" placeholder="What suck about your life?  Or What are you resisting?  Or what would you like to change??">One thing I don't like is  </textarea>
+				<p class="list-group-item-heading ">What would you like instead?</p>
+				<textarea rows="4" class="list-group-item-text form-control" placeholder="What would you like instead">Instead, I would like </textarea>
+				<p class="list-group-item-heading ">What action could you take today to change that?</p>
+				<textarea rows="4" class="list-group-item-text form-control" placeholder="What action could you take today to change that?">To change this, I could </textarea>
+				<p class="list-group-item-heading ">Are there any actions you are willing to take now?</p>
+				<textarea rows="4" class="list-group-item-text form-control" placeholder="Are there any actions you are willing to take now?">I would be willing to  </textarea>
+				<button class = "btn btn-success add">Add This </button>
+			</div>
+	<!-- end action item -->
+
+
+	<!-- Action Item -->
+			<div class="list-group-item action testing money form-group" style="display:none;"" id="money">
+				<h4 class="list-group-item-heading  sub-menu-trigger" id="" >Transform Your Money Reality</h4>
+				<p class="list-group-item-heading text-muted ">Use this to change how you relate to money</p>
+<hr>
+				<p class="list-group-item-heading ">How much money are you making this week?</p>
+				<textarea rows="4" class="list-group-item-text form-control" placeholder="How much money are you making this week??">I am making </textarea>
+				<p class="list-group-item-heading ">What would it take to double that next week?</p>
+				<textarea rows="4" class="list-group-item-text form-control" placeholder="What would it take to double that next week">I can imagine doubling my income next week, I would have to </textarea>
+				<p class="list-group-item-heading ">What is the easiest, most graceful way of doing this?</p>
+				<textarea rows="4" class="list-group-item-text form-control" placeholder="What is the easiest, most graceful way of doing this?">I imagine that the easiest, most graceful way of doing this would be </textarea>
+				<p class="list-group-item-heading ">Are you willing to commit wholeheatedly to creating this reality?</p>
+				<textarea rows="4" class="list-group-item-text form-control" placeholder="Are you willing to commit wholeheatedly to creating this reality?"> </textarea>
+				<button class = "btn btn-success add">Add This </button>
+			</div>
+	<!-- end action item -->
+
+
+
+		</div>
+
+<div id="action_area_next">
+
+</div>
+
+
+
+</div>
+
+<!-- if the goals is selected, #journal_tools_selector class changes to 'text-muted menu_button pull-right show_tools_logs' -->
+
+
+
+
+
+<div id="journal_col" class="col-sm-12 col-xs-12 col">
+<div class="list-group" >
+			<br>
+			<div class="list-group-item">
+				<h3 class="list-group-item-heading sub-menu-trigger" id="" >Journal 
+				<a id='journal_selector' class='text-muted menu_button pull-right show_tools_logs'>/ Tools</a>
+				<a id='show_all_journal_items' class='text-muted menu_button pull-right'>All</a>
+				</h3>
+				
+</p>
+
+			</div>
+			<div class="element" >
+
+</div>
+			<div id ="journal_area" class="scrollable_wrapper">
+
+</div>
+		</div>
+
+</div>
+
+
+</div>
+
+
+		
+	</div>
+</div>
+</div>
+</div>
+</div>
+
+
+</section><!-- #content end -->
+
+
+
+
+
+<section><!-- #content begin -->
+
+
+	<div class="content-wrap">
+
+		<div class="container ">
+
+<!-- Post Content
+	============================================= -->
+	<div class=" nobottommargin">
+
+
+
+
+</section><!-- #content end -->
+
+
+
+<style>
+
+	.text-muted {
+		color: grey;
+		text-align: left;
+		font-weight: 200;
+		font-size: 14px;
+	}
+	.link-text{
+		 font-style: italic;
+	}
+
+</style>
+
+
+
+<!-- External JavaScripts
+	============================================= -->
+
+
+<!-- Footer Scripts
+	============================================= -->
+<script >
+
+
+var nameOne = "john";
+var nameTwo = "jane"; 
+var x = nameOne.concat(" and ", nameTwo);
+console.log(x);
+
+</script>
+
+
+
+
+
+</script>
+
+
+<!-- check in on goals action script -->
+<script type="text/javascript" language="Javascript" src="check_in_options.js"></script>
+
+<!-- on click commands js -->
+<script type="text/javascript" language="Javascript" src="on_click_commands.js"></script>
+
+<!-- goals data -->
+<script type="text/javascript" language="Javascript" src="goals_data.js"></script>
+<!-- main js -->
+<script type="text/javascript" language="Javascript" src="quickcoach.js"></script>
+
+<!-- action data -->
+<script type="text/javascript" language="Javascript" src="action_data.js"></script>
+
+<!-- check in on goals action script -->
+<script type="text/javascript" language="Javascript" src="check_in.js"></script>
+
+<!-- on load parameters js -->
+<script type="text/javascript" language="Javascript" src="on_load_params.js"></script>
+
+<!-- feed manager js -->
+<script type="text/javascript" language="Javascript" src="feed_manager.js"></script>
+
+<style type="text/css">
+
+.journal_entry{
+	margin-top: 4px;
+	margin-bottom: 4px;
+}
+
+
+
+.text-muted-darker{
+	color: black;
+	font-weight: 300;
+}
+
+
+
+#content, html, body {
+    height: 98%;
+}
+.col-sm-4, .col-xs-6{
+	
+	padding-right: 5px;
+	padding-left: 5px;
+}
+
+.scrollable_wrapper{
+
+	max-height: 61vh;
+	overflow-y: scroll;
+}
+
+
+
+.row{
+	max-height: 90vh;
+
+	/*flexible grid spacing option here*/
+	white-space: normal;
+    display: inline-flex;
+    /*flexible grid spacing option end*/
+
+}
+.mainContainer{
+	padding-left: 0px;
+	padding-right: 0px;
+}
+
+</style>
+</head>
+<body>
+
+
+
+</body>
+
+
+<style type="text/css">
+
+
+
+   
+    .col, .row{
+    padding-right: 5px;
+    padding-left: 5px;
+
+    }
+
+@media only screen and (max-width: 700px) {
+   
+    .col, .row{
+    padding-right: 2px;
+    padding-left: 2px;
+
+
+    }
+    h4{
+    	font-size: 14px;
+    }
+
+
+
+}
+
+
+.state{
+	color: black;
+	font-weight: 500;
+	font-size: 100px;
+	color: #e9e6e6;
+
+}
+.subtitle{
+}
+
+
+   
+
+
+.menu_button{
+	color: #717c84;
+}
+
+.text-very-muted{
+	color: #e9e6e6;
+}
+
+
+div.list-group-item.context:hover{
+	color: #555;
+    text-decoration: none;
+    background-color: #f5f5f5;
+}
+
+div.list-group-item.goal:hover{
+	color: #555;
+    text-decoration: none;
+    background-color: #f5f5f5;
+}
+div.list-group-item.habit:hover{
+	color: #555;
+    text-decoration: none;
+    background-color: #f5f5f5;
+}
+
+div.list-group-item.inquiry:hover{
+	color: #555;
+    text-decoration: none;
+    background-color: #f5f5f5;
+}
+
+
+</style>
+
+
+
+</html>
